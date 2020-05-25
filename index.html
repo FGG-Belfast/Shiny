@@ -4,22 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>generatR Shiny Apps</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  <script type="text/javascript">
-$('.menu-toggle').click(function(){
-   $(".nav").toggleClass("mobile-nav");
-   $(this).toggleClass("is-active");
+  <script>
+      $(document).ready(function(){
+  $('.menu-toggle').click(function(){
+    $(".nav").toggleClass("mobile-nav");
+    $
+    $(this).toggleClass("is-active");
+ });
 });
-</script>
+    
+ </script>
+  
+  <script>
+    function hideBody() {
+  var x = document.getElementById("body");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>
+
 </head>
+  <div class="page-wrapper">
   <div class="nav-wrapper">
   <div class="grad-bar"></div>
   <nav class="navbar">
     <img src="images/genlogosmall.png" alt="generatR logo">
-    <div class="menu-toggle" id="mobile-menu">
+    <div class="menu-toggle" id="mobile-menu" onclick='hideBody()'>
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
@@ -37,6 +55,7 @@ $('.menu-toggle').click(function(){
   </div>
 <body class="is-boxed has-animations">
         <main>
+          <div id=body>
             <section class="hero text-center" style="background-color: #FFF;margin-top: 50px">
                 <div class="container-sm">
                     <div class="hero-inner">
@@ -133,8 +152,10 @@ $('.menu-toggle').click(function(){
                     </div>
                 </div>
         </div>
+                                                          </div>
             </section>
         </main>
     <script src="dist/js/main.min.js"></script>
+                                                          </div>
 </body>
 </html>
